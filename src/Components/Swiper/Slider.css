@@ -105,3 +105,37 @@
   font-size: 24px;
   cursor: pointer;
 }
+
+@media only screen and (max-width: 550px){
+  
+  .swiper-slide {
+    height: 150px;
+    padding-bottom: 0;
+  }
+  
+  
+  
+  .swiper-img{
+    width: 120px!important;
+    height: 100%!important;
+    cursor: pointer;
+  }
+  
+  .mySwiper{
+    position: relative!important;
+  }
+  
+  .swiper-button-prev, .swiper-button-next{
+    /* color: white; */
+    top: 90%;
+  }
+  
+  .swiper-button-prev{
+    left: 40%;
+  }
+  
+  .swiper-button-next{
+    right: 40%;
+  }
+  
+}
