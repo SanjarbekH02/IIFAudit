@@ -1,0 +1,238 @@
+.quiz{
+    margin-bottom: 60vh;
+}
+
+.quiz-play{
+    margin-top: 0;
+}
+
+.lesson-quiz{
+    margin-bottom: 60vh;
+}
+
+.lesson-complaint{
+    width: fit-content;
+    margin-left: auto;
+    margin-bottom: 20px;
+}
+
+.write-quiz-block{
+    width: 100%;
+    justify-content: space-between;
+}
+
+.written-quiz{
+    width: 30%;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.quiz-info{
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 0;
+    color: #64748B;
+}
+
+.quiz-chat{
+    width: 65%;
+}
+
+.quiz-chat-block{
+    width: 100%;
+}
+
+.quiz-chat-body{
+    height: 430px;
+}
+
+.score-number{
+    width: 65%;
+    margin-left: auto;
+    padding: 20px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 16px;
+    margin-top: 15px;
+    color: #64748B;
+}
+
+.quiz-modal{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #eceaf9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+}
+
+.quiz-modal-content{
+    width: 550px;
+    /* height: 450px; */
+    background-color: white;
+    padding: 20px;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.quiz-messeg{
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 24px;
+    color: #4AC87B;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.quiz-modal-score{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    color: #64748B;
+    padding-bottom: 50px;
+}
+
+.quiz-modal-btn{
+    width: 300px;
+    padding: 14px;
+    color: white;
+    background:linear-gradient(to right, #FF7373, #CD2525) ;
+    border: none;
+    border-radius: 12px;
+    margin-top: 40px;
+}
+
+.quiz-modal-btn:hover{
+    background: linear-gradient(#FF7373, #CD2525);
+    box-shadow: 0 0 3px #FF7373;
+}
+
+.modal-back{
+    width: 300px;
+    padding: 14px;
+    color: #CD2525;
+    background-color: white;
+    border: 2px solid #CD2525;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.modal-back:hover{
+    box-shadow: 0 0 5px #FF7373;
+}
+
+.quiz-modal-reply{
+    width: 250px;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #64748B;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 550px) {
+   
+    .quiz{
+        position: relative;
+        padding-bottom: 30px;
+    }
+
+    .quiz-complaint{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+    
+    .write-quiz-block{
+        width: 100%;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    
+    .written-quiz{
+        width: 100%;
+        background-color: inherit;
+        padding-top: 0;
+    }
+
+    .quiz-book{
+        font-size: 16px;
+    }
+    
+    .quiz-info{
+        font-size: 14px;
+        line-height: 19px;
+    }
+    
+    .quiz-chat{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .score-number{
+        width: 100%;
+        font-size: 16px;
+    }
+    
+    .quiz-modal-content{
+        width: 330px;
+    }
+    
+    .quiz-messeg{
+        font-size: 16px;
+        line-height: 15px;
+        padding: 15px;
+    }
+    
+    .quiz-modal-score{
+        font-weight: 500;
+        font-size: 14px;
+        margin: 0;
+        padding: 5px;
+    }
+    
+    .success-img{
+        width: 66px;
+    }
+
+    .quiz-modal-btn{
+        width: 170px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+    
+    .modal-back{
+        width: 170px;
+        padding: 8px;
+        font-size: 12px;
+        border-radius: 5px;
+        /* margin-top: 20px; */
+    }
+    
+    .modal-back:hover{
+        box-shadow: 0 0 5px #FF7373;
+    }
+    
+    .quiz-modal-reply{
+        font-size: 14px;
+    }
+    
+}
