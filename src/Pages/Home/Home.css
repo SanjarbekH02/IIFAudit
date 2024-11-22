@@ -227,7 +227,7 @@
     padding: 15px;
     background-color: white;
     width: 31%!important;
-    height: 390px!important;
+    height: 360px!important;
     border-radius: 7px;
 }
 
@@ -259,7 +259,7 @@
 
 .swiper-slide-active  {
     width: 36%!important;
-    height: 430px!important;
+    height: 400px!important;
     transition: 0.8s ease;
 }
 

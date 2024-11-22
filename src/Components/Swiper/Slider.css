@@ -22,7 +22,7 @@
 
 .swiper-img{
   width: 100%!important;
-  height: 50%!important;
+  height: 70%!important;
   cursor: pointer;
 }
 
@@ -36,11 +36,11 @@
 }
 
 .swiper-button-prev{
-  left: 44%;
+  left: 48%;
 }
 
 .swiper-button-next{
-  right: 44%;
+  right: 40%;
 }
 
 .swiper-button-prev, .swiper-button-next{
