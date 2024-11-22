@@ -22,7 +22,7 @@
 
 .swiper-img{
   width: 100%!important;
-  height: 100%!important;
+  height: 50%!important;
   cursor: pointer;
 }
 
@@ -104,6 +104,30 @@
   right: 10px;
   font-size: 24px;
   cursor: pointer;
+}
+
+.swiper-box{
+  display: flex!important;
+  align-items: flex-start!important;
+}
+
+.swiper-slide{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  justify-content: flex-start;
+  height: 370px;
+  width: 33%!important;
+  border-radius: 8px;
+}
+
+.swiper-slide-desc{
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 14px;
+  color: #64748B;
+  padding: 10px 0;
 }
 
 @media only screen and (max-width: 550px){

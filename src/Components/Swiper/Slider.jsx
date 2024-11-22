@@ -8,8 +8,6 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
 import './Slider.css';
-
-// import required modules
 import { Pagination, Navigation } from 'swiper/modules';
 
 export default function App() {
@@ -18,13 +16,10 @@ export default function App() {
   const [currentImage, setCurrentImage] = useState('');
   const certtificateImages = [Cert1, Cert2, Cert3, Cert1]
 
-  // Function to open modal
   const openModal = (imageSrc) => {
     setCurrentImage(imageSrc);
     setIsModalOpen(true);
   };
-
-  // Function to close modal
   const closeModal = () => {
     setIsModalOpen(false);
     setCurrentImage('');
@@ -35,29 +30,29 @@ export default function App() {
       <Swiper
         onSwiper={setSwiperRef}
         slidesPerView={3}
-        centeredSlides={false}
+        centeredSlides={true}
         spaceBetween={30}
         pagination={{
           type: 'fraction',
         }}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper"
+        className="mySwiper swiper-box"
       >
         {certtificateImages.map((image, index) => (
-          <SwiperSlide key={index} className='swiper-slide'>
+          <SwiperSlide key={index} className="swiper-slide">
             <img
-              className='swiper-img'
+              className="swiper-img"
               src={image}
               alt={`certificate ${index + 1}`}
-              onClick={() => openModal(image)} // Open modal on click
+               onClick={() => openModal(image)} // Open modal on click
               style={{ cursor: 'pointer' }}
             />
+            <p className="swiper-slide-desc">Kurs yakunida sertifikat olish un ofisga borib imtihon topshirilishi haqida yozish kk shu yerga </p>
           </SwiperSlide>
         ))}
       </Swiper>
 
-      {/* Modal */}
       {isModalOpen && (
         <div className="modal" onClick={closeModal}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>

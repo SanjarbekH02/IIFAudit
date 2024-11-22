@@ -10,6 +10,7 @@ import Slider from '../../Components/Swiper/Slider'
 import Image1 from '../../images/image1.png'
 import Image2 from '../../images/image2.png'
 import Image3 from '../../images/image3.png'
+import ToLeftImg from '../../images/strelka.png'
 
 
 import 'swiper/css';
@@ -20,7 +21,12 @@ import { Pagination, Navigation } from 'swiper/modules';
 const Home = () => {
 
     const [swiperRef, setSwiperRef] = useState(null)
-    const certtificateImages = [Image1, Image2, Image3, Image1, Image2]
+    const certtificateImages = [
+        { img: Image1, desc: "International Institute of Finance and Accounting IIFA - ведущийпо ставщик профессиональных квалификаций в области бухгалтерского учета, финансов, управления персоналом и проектного менеджмента, внутреннего аудита, а также другим направлениям развития бизнеса." },
+        { img: Image3, desc: "IIFA -опирается на обширную сеть профессиональных лидеров и экспертов, чтобы обеспечить качественный вклад в практику финансов, бухгалтерского учета и аудита. " },
+        { img: Image2, desc: "Мы предоставляем своевременные, эффективные и экономически выгодные решения для обучения, отвечающие как организационным, так и индивидуальным требованиям." },
+        { img: Image3, desc: "IIFA -опирается на обширную сеть профессиональных лидеров и экспертов, чтобы обеспечить качественный вклад в практику финансов, бухгалтерского учета и аудита. " },
+    ]
     return (
         <div>
             <div className='container'>
@@ -38,32 +44,33 @@ const Home = () => {
                 </div>
 
                 <div className="knowledge">
-                    <div className="knowledge-block">
-                        <p className="knowledge-desc">Kurs yakunida sertifikat olish un ofisga borib imtihon topshirilishi haqida yozish kk shu yerga </p>
-                        <h2 className="knowledge-title">IIFA - upgrade your knowladge</h2>
-                    </div>
-                    <div className="knowledge-right">
+                    <div className="knowledge-top">
                         <div className='swiper-block'>
                             <Swiper
                                 onSwiper={setSwiperRef}
                                 slidesPerView={3}
-                                centeredSlides={false}
+                                centeredSlides={true}
+                                initialSlide={Math.floor(certtificateImages.length / 2 - 1)}
                                 spaceBetween={30}
                                 pagination={{
                                     type: 'fraction',
                                 }}
                                 navigation={true}
                                 modules={[Navigation]}
-                                className="mySwiper"
+                                className="mySwiper swiper-block"
                             >
                                 {certtificateImages.map((image, index) => (
-                                    <SwiperSlide key={index} className='swiper-slide'>
+                                    <SwiperSlide key={index} className='swiper-slide swiper-slider'>
                                         <img
-                                            className='swiper-img'
-                                            src={image}
+                                            className='swipers-image'
+                                            src={image.img}
                                             alt={`certificate ${index + 1}`}
                                             style={{ cursor: 'pointer' }}
                                         />
+                                        <p className="slide-desc">{image.desc}</p>
+                                        <div className="to-right">
+                                            <img src={ToLeftImg} alt="" />
+                                        </div>
                                     </SwiperSlide>
                                 ))}
                             </Swiper>
