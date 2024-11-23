@@ -447,4 +447,33 @@
         width: 100%;
     }
 
-}
+    .swiper-wrapper{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .swiper-slider{
+        width: 20%;
+    }
+    
+    .swiper-slider{
+        width: 20%!important;
+        height: 150px!important;
+        padding: 3px!important;
+    }
+
+    .slide-desc{
+        font-size: 5px;
+        line-height: 6px;
+    }
+
+    .swiper-to-right{
+        width: 30px;
+    }
+
+    .swiper-slide-active {
+        width:50%!important;
+        height: 165px!important;
+    }
+
+}   

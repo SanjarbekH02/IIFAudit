@@ -31,7 +31,7 @@ export default function App() {
         onSwiper={setSwiperRef}
         slidesPerView={3}
         centeredSlides={true}
-        spaceBetween={30}
+        spaceBetween={50}
         pagination={{
           type: 'fraction',
         }}
@@ -40,15 +40,15 @@ export default function App() {
         className="mySwiper swiper-box"
       >
         {certtificateImages.map((image, index) => (
-          <SwiperSlide key={index} className="swiper-slide">
+          <SwiperSlide key={index} className="swiper-slide swiper-slider">
             <img
-              className="swiper-img"
+              className="swipers-image"
               src={image}
               alt={`certificate ${index + 1}`}
                onClick={() => openModal(image)} // Open modal on click
               style={{ cursor: 'pointer' }}
             />
-            <p className="swiper-slide-desc">Kurs yakunida sertifikat olish un ofisga borib imtihon topshirilishi haqida yozish kk shu yerga </p>
+            <p className="slide-desc">Kurs yakunida sertifikat olish un ofisga borib imtihon topshirilishi haqida yozish kk shu yerga </p>
           </SwiperSlide>
         ))}
       </Swiper>
